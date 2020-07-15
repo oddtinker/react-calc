@@ -1,0 +1,31 @@
+.KeypadBody {
+  width: 13rem;
+  margin: 1.4rem auto;
+  border: 2px solid plum;
+  border-radius: 2%;
+  box-shadow: 0 3px 0px rgb(244, 203, 203),
+              0 6px 2px rgb(188, 180, 180);
+}
+
+.Keypad {
+  padding: 0.7rem;
+  background-color: #ffc535;
+  border-top: 6px solid #ff299c;
+}
+
+.Actions {}
+
+.Operators {}
+
+.Operands {
+  width: 10rem;
+}
+
+@media (min-width: 500px) {
+  .KeypadBody {
+    width: 16rem;
+  }
+  .Keypad {
+    padding: 0.8rem;
+  }
+}

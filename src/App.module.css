@@ -1,0 +1,19 @@
+.App {
+  margin-top: 3rem;
+  width: 50vw;
+}
+
+.App > h1 {
+  font-size: 1.5rem;
+  color: rgb(105, 139, 160);
+}
+
+@media (min-width: 500px) {
+  .App {
+    margin-top: 4rem;
+    width: 50vw;
+  }
+  .App > h1 {
+    font-size: 2rem;
+  }
+}

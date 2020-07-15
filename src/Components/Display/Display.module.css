@@ -1,0 +1,28 @@
+.Display {
+  position: relative;
+  overflow: hidden;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  min-height: 3rem;
+  background-color: rgb(237, 171, 237);
+  box-sizing: border-box;
+  border-top: 2px solid rgb(201, 145, 201);
+  border-left: 1px solid rgb(201, 145, 201);
+}
+
+.Output {
+  text-align: right;
+  color: blueviolet;
+  font-size: 1.3rem;
+  font-style: italic;
+  text-shadow: 1px 1px 2px #3c69683d;
+}
+
+@media (min-width: 500px) {
+  .Display {
+    min-height: 4rem;
+  }
+  .Output {
+    font-size: 1.5rem;
+  }
+}
