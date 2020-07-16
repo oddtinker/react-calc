@@ -1,5 +1,10 @@
-body * {
+body {
   font-family: monospace;
   margin: 0 auto;
-  text-align: center;
+}
+
+#root {
+  display: grid;
+  place-items: center;
+  grid-template-rows: auto 1fr;
 }

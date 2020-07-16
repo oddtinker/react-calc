@@ -1,0 +1,40 @@
+.Navigation {
+  margin-bottom: 1rem;
+}
+
+.LinkDiv {
+  display: inline-block;
+  padding: 0.6rem;
+  background-color: rgb(255, 231, 210);
+  border: 1px dashed white;
+  border-top: none;
+  box-shadow: 0 1px 0px 0px whitesmoke;
+  cursor: pointer;
+}
+
+.LinkDiv:last-of-type * {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.LinkDiv * {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0px 1px 1px plum;
+}
+
+@media (min-width: 500px) {
+  .LinkDiv > a {
+    font-size: 1.2rem;
+  }
+  .LinkDiv:hover {
+    box-shadow: 0 2px 2px 2px whitesmoke;
+  }
+  .LinkDiv:hover > a {
+    color: plum;
+    text-shadow: 0px 1px 1px white;
+  }
+}

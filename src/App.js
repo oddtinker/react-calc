@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import classes from './App.module.css';
-import Keypad from './Components/Keypad/Keypad';
+import Calculator from './Components/Calculator/Calculator';
+import Navigation from './Components/Navigation/Navigation';
 
 class App extends Component {
   render() {
     return (
-      <div className={classes.App}>
-        <h1>React <span role="img" aria-label="diamond emoji">💠</span> Calculator</h1>
-        <Keypad />
-      </div>
+      <>
+        <Navigation />
+        <div className={classes.App}>
+          <h1>React <span role="img" aria-label="diamond emoji">💠</span> Calculator</h1>
+          <Calculator />
+        </div>
+      </>
     )
   }
 }

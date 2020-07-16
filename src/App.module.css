@@ -1,6 +1,5 @@
 .App {
-  margin-top: 3rem;
-  width: 50vw;
+  max-width: 80vw;
 }
 
 .App > h1 {
@@ -9,10 +8,6 @@
 }
 
 @media (min-width: 500px) {
-  .App {
-    margin-top: 4rem;
-    width: 50vw;
-  }
   .App > h1 {
     font-size: 2rem;
   }
