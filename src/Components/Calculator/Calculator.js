@@ -5,9 +5,6 @@ import Button from '../Button/Button';
 
 class Calculator extends Component {
   state = {
-    operators: ["/", "*", "+", "-"],
-    operands: [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "."],
-    actions: ["C", "=", "B"],
     operand1: null,
     operand2: null,
     operator: null,
@@ -84,18 +81,6 @@ class Calculator extends Component {
     }
   };
   render() {
-    const operands = this.state.operands.map(button => (
-      <Button
-      key={button + "operand"}
-      name={button}
-      handleClick={this.setOperand}>{button}</Button>)
-    );
-    const operators = this.state.operators.map(button => (
-      <Button
-      key={button + "operator"}
-      name={button}
-      handleClick={this.setOperator}>{button}</Button>)
-    );
     let output = 0;
     if (this.state.result) {
       output = this.state.result;
