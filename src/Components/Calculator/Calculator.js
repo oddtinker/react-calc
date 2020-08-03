@@ -23,6 +23,9 @@ class Calculator extends Component {
       }
     } else {
       if (!this.state.operand1) {
+        if (this.state.result !== null) {
+          this.setState({ result: null });
+        }
         if (value === ".") {
           this.setState({ operand1: 0 + value });
         } else {
@@ -77,7 +80,12 @@ class Calculator extends Component {
           this.setState({ result });
           break;
       }
-      this.setState({ result: result.toFixed(1) });
+      this.setState({
+        operand1: null,
+        operand2: null,
+        operator: null,
+        result: result.toFixed(1)
+      });
     }
   };
   render() {
